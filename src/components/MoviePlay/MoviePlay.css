@@ -1,0 +1,23 @@
+.episodes {
+    margin: 20px -7px;
+    text-align: justify;
+    border-bottom: 1px solid #4c4c4c;
+    font-size: 0;
+    position: relative;
+
+}
+
+.episodes li a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #3a3a3a;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.episodes li {
+    display: inline-block;
+    margin: 0 5px 15px;
+}
