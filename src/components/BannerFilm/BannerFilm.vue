@@ -28,5 +28,5 @@
     </div>
   </section>
 </template>
-<script></script>
-<style></style>
+<script src="./BannerFilm"></script>
+<style src="./BannerFilm.css"></style>

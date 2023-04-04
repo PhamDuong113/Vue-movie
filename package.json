@@ -18,7 +18,9 @@
     "pinia": "^2.0.16",
     "vue": "^2.7.7",
     "vue-owl-carousel": "^2.0.3",
-    "vue-router": "^3.5.4"
+    "vue-plain-pagination": "^0.3.0",
+    "vue-router": "^3.5.4",
+    "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

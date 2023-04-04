@@ -1,6 +1,7 @@
 footer {
   background: var(--rich-black-fogra-30);
   padding: 80px var(--px) 40px;
+  margin-top: 100px;
 }
 
 .footer-content {

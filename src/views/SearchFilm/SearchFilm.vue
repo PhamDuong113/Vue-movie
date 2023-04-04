@@ -52,6 +52,13 @@
           </div>
         </div>
       </div>
+
+      <pagination-movie
+        :total_page="total_page"
+        @Pagination_change="Pagination_change"
+        @Pre_page="Pre_page"
+        @Next_page="Next_page"
+      ></pagination-movie>
     </div>
     <div v-else-if="isProcessing"></div>
     <NotFound v-else />

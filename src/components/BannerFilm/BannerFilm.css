@@ -1,0 +1,35 @@
+#slideshow {
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 14s ease infinite;
+}
+.slide {
+  float: left;
+  height: 350px;
+  width: 100%;
+}
+.img-poster {
+  width: 45%;
+}
+@-webkit-keyframes slide {
+  100% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -728px;
+  }
+  100% {
+    margin-left: -1456px;
+  }
+  100% {
+    margin-left: -1456px;
+  }
+}

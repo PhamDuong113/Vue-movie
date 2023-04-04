@@ -35,6 +35,14 @@
         </div>
       </div>
     </div>
+
+    <!-- phân trang -->
+    <pagination-movie
+      :total_page="total_page"
+      @Pagination_change="Pagination_change"
+      @Next_page="Next_page"
+      @Pre_page="Pre_page"
+    ></pagination-movie>
   </div>
 </template>
 \

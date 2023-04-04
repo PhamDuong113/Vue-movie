@@ -36,7 +36,14 @@ nav {
 .navbar-nav li:not(:last-child) {
   margin-right: 60px;
 }
-
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 .navbar-link {
   font-size: var(--fs-sm);
   font-weight: var(--fw-5);

@@ -1,0 +1,15 @@
+li.page-item {
+  cursor: pointer;
+}
+.page-link {
+  background: #18232e;
+  border: #18232e;
+}
+.pagination {
+  margin-top: 50px;
+  position: absolute;
+  bottom: -34px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
