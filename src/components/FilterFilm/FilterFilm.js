@@ -2,6 +2,7 @@ import { GetGene } from "../../sevice/FilterFilmSevice/FilterFilmSevice";
 
 export default {
   props: ["typemoveid", "year", "rankmove"],
+
   data() {
     return {
       genes: [],
@@ -11,7 +12,6 @@ export default {
       rankmove: "popularity.desc",
     };
   },
-
   mounted() {
     this.Gene();
   },
@@ -20,8 +20,6 @@ export default {
     async Gene() {
       const res = await GetGene();
       this.genes = res.data.genres;
-
-      console.log("thể loại : ", this.genes);
     },
     vote_average() {
       this.rankmove = "vote_average.desc";

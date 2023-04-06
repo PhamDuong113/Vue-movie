@@ -1,12 +1,11 @@
 // import { mapState } from "pinia";
-import { Searchkey } from "../../stores/Searchkey";
+
 export default {
   data() {
     return {
       shownavbar: false,
       searchshow: false,
       keysearch: "",
-      Searchkey: Searchkey(),
     };
   },
 
@@ -38,9 +37,11 @@ export default {
 
     handlesearch() {
       console.log("đã lấy được search", this.keysearch);
-      this.Searchkey.type(this.keysearch);
-      this.$router.push({ path: `/search/${this.keysearch}` });
-      this.keysearch = "";
+
+      if (this.keysearch != null) {
+        this.$router.push({ path: `/search/${this.keysearch}` });
+        this.keysearch = "";
+      }
     },
   },
 

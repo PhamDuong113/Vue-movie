@@ -17,11 +17,11 @@ export default {
     PaginationMovie,
   },
 
-  mounted() {
-    this.keymove = this.$route.params.key;
-    console.log("route search:", this.$route.params.key);
-    console.log("key movie mounted:", this.keymove);
-  },
+  // mounted() {
+  //   this.keymove = this.$route.params.key;
+  //   console.log("route search:", this.$route.params.key);
+  //   console.log("key movie mounted:", this.keymove);
+  // },
 
   computed: {
     searchmovies() {
@@ -29,7 +29,6 @@ export default {
       console.log("computed đã được gọi", this.keymove);
     },
   },
-
   methods: {
     async Searchmove(pageid) {
       this.isProcessing = true;
@@ -70,6 +69,7 @@ export default {
 
       this.Searchmove(pageid);
     },
+
     Pre_page() {
       this.page--;
       if (this.page < 1) {
