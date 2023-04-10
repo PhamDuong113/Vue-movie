@@ -38,7 +38,7 @@ export default {
     handlesearch() {
       console.log("đã lấy được search", this.keysearch);
 
-      if (this.keysearch != null) {
+      if (this.keysearch != "") {
         this.$router.push({ path: `/search/${this.keysearch}` });
         this.keysearch = "";
       }

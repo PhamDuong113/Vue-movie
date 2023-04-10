@@ -1,14 +1,12 @@
 import { GetGene } from "../../sevice/FilterFilmSevice/FilterFilmSevice";
 
 export default {
-  props: ["typemoveid", "year", "rankmove"],
-
   data() {
     return {
       genes: [],
-
       time: new Date(),
-
+      typemoveid: "28",
+      year: "2023",
       rankmove: "popularity.desc",
     };
   },
@@ -21,6 +19,7 @@ export default {
       const res = await GetGene();
       this.genes = res.data.genres;
     },
+
     vote_average() {
       this.rankmove = "vote_average.desc";
     },
@@ -35,7 +34,7 @@ export default {
   watch: {
     typemoveid() {
       console.log("typemove phần filter:", this.typemoveid);
-      this.$emit("Geneid", `${this.typemoveid}`);
+      this.$emit("Geneid", this.typemoveid);
     },
     year() {
       this.$emit("filteryear", this.year);

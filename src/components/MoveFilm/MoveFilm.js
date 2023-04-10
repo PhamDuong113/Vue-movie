@@ -11,7 +11,6 @@ export default {
       Moves: [],
       Type: "movie",
       total_page: [{ pageid: 1, IsPageChoose: true }],
-
       page: 1,
       count: 0,
     };
@@ -63,6 +62,8 @@ export default {
       }
 
       this.Move(pageid);
+
+      window.scroll(0, 300);
     },
 
     Pre_page() {
@@ -75,6 +76,7 @@ export default {
       this.Move(this.page);
       this.total_page[this.page].IsPageChoose = false;
       this.total_page[this.page - 1].IsPageChoose = true;
+      window.scroll(0, 300);
     },
 
     Next_page() {
@@ -87,6 +89,8 @@ export default {
       this.Move(this.page);
       this.total_page[this.page - 1].IsPageChoose = true;
       this.total_page[this.page - 2].IsPageChoose = false;
+
+      window.scroll(0, 300);
     },
   },
   watch: {

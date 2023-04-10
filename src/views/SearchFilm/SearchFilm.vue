@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="movies-grid" v-if="movieSearchs.length > 0">
+    <div class="movies-grid" v-if="movieSearchs.length > 0 && !isProcessing">
       <div
         v-show="moviesearch.poster_path"
         class="movie-card"

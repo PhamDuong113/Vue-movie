@@ -35,7 +35,7 @@ export default {
 
       const res = await Getsearch(this.keymove, pageid);
       this.movieSearchs = await res.data.results.slice(0, 19);
-
+      console.log("thời gian deplay");
       if (this.count != 1) {
         for (let i = 2; i <= res.data.total_pages; i++) {
           this.total_page.push({ pageid: i, IsPageChoose: false });
@@ -68,6 +68,7 @@ export default {
       }
 
       this.Searchmove(pageid);
+      window.scroll(0, 0);
     },
 
     Pre_page() {
@@ -80,6 +81,8 @@ export default {
       this.Searchmove(this.page);
       this.total_page[this.page].IsPageChoose = false;
       this.total_page[this.page - 1].IsPageChoose = true;
+
+      window.scroll(0, 0);
     },
 
     Next_page() {
@@ -93,7 +96,9 @@ export default {
       this.total_page[this.page - 1].IsPageChoose = true;
       this.total_page[this.page - 2].IsPageChoose = false;
 
-      console.log("page hien tai sau khi next", this.page);
+      // console.log("page hien tai sau khi next", this.page);
+
+      window.scroll(0, 0);
     },
   },
 

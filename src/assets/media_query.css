@@ -310,6 +310,9 @@
     --section-heading: 32px;
     --fs-lg: 20px;
   }
+  .pagination {
+    display: none;
+  }
 
   .css-1oj2twp-MuiPagination-root {
     position: absolute;
