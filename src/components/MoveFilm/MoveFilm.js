@@ -47,7 +47,6 @@ export default {
 
     HandleClickMovie(id) {
       this.$router.push({ path: `/detail-movie/movie/${id}` });
-      console.log("click move:");
     },
 
     Pagination_change(pageid) {
@@ -76,6 +75,7 @@ export default {
       this.Move(this.page);
       this.total_page[this.page].IsPageChoose = false;
       this.total_page[this.page - 1].IsPageChoose = true;
+
       window.scroll(0, 300);
     },
 

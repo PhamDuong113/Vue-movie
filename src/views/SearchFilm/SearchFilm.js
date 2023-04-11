@@ -17,12 +17,6 @@ export default {
     PaginationMovie,
   },
 
-  // mounted() {
-  //   this.keymove = this.$route.params.key;
-  //   console.log("route search:", this.$route.params.key);
-  //   console.log("key movie mounted:", this.keymove);
-  // },
-
   computed: {
     searchmovies() {
       this.keymove = this.$route.params.key;

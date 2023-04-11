@@ -61,11 +61,11 @@
           <button class="navbar-search-btn" @click="handlebuttonsearch">
             <ion-icon name="search-outline"></ion-icon>
           </button>
-
+          <!-- 
           <div class="navbar-signin">
             <span>Sign in</span>
             <ion-icon name="log-in-outline"></ion-icon>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>

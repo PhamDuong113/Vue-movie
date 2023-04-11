@@ -6,7 +6,6 @@
     <!-- phần lọc phim -->
     <section class="movies">
       <FilterFilm
- 
         @Geneid="Geneid($event)"
         @filteryear="filteryear($event)"
         @rankmovie="(rank) => filterrankmovie(rank)"

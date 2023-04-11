@@ -18,10 +18,6 @@ export default {
     LiveFilm,
   },
 
-  // created() {
-  //   year = new Date(),
-  // },
-
   methods: {
     Geneid(id) {
       console.log("thể loại move được chọn ", id);
